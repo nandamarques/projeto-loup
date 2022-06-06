@@ -67,7 +67,3 @@
     --bs-btn-disabled-bg: transparent;
     --bs-gradient: none;
 }
-.bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: var(--roxo)!important;
-}
