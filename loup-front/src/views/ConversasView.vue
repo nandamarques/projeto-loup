@@ -86,6 +86,10 @@ export default {
 <style>
 :root{
   --roxo: #5E17EB;
+  --cinza: rgb(174, 172, 172);
+}
+body {
+  background: var(--cinza);
 }
 .list-group {
   max-width: 460px;

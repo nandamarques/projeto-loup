@@ -7,6 +7,11 @@
         <button href="#" class="btn btn-light my-2">Tops semana</button>
         <button href="#" class="btn btn-light my-2">Popular</button>
         <button href="#" class="btn btn-light my-2">Aleatorio</button>
+        <div class="my-2">
+          <input type="search"  placeholder="Search" aria-label="Search">
+          <button class="btn btn-light" style="margin-left: 25px;" type="submit">Search</button>
+        </div>
+                
     </div>
     
     <div class="album py-5 bg-light">
@@ -70,6 +75,11 @@ export default {
 <style>
 :root{
     --roxo: #5E17EB;
+    --cinza: rgb(174, 172, 172);
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color:var(--cinza);
 }
 .topMenu{
     background-color: var(--roxo);
@@ -82,7 +92,8 @@ export default {
 }
 .btn-light:hover {
     color: white!important;
-    background-color: black!important;
+    background-color: var(--roxo)!important;
+    border: 2px solid white!important;
 }
 .bd-placeholder-img {
     font-size: 1.125rem;
