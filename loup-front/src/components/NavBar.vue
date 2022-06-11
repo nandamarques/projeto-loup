@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 nvabarra">
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark mb-4 nvabarra">
   <div class="container-fluid">
     <router-link class="nav-link active" to="/feed"><img src="@/assets/img/Logo.png" alt="twbs" width="40" height="40" style="border: 1px solid black;" class="rounded-circle flex-shrink-0"/></router-link> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,6 @@
           <router-link class="nav-link active" to="/conversas">Mensagens</router-link> 
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
         </li>
       </ul>
     </div>
@@ -22,15 +21,13 @@
 </nav>
 </template>
 <script>
-export default {
-  name: 'NavBar',
-  props: {
-    msg: String
-  }
-}
+    export default {
+      name: 'NavBar',
+    }
 </script>
+
 <style>
-.navbar {
+#navbar {
   margin-bottom: 0px!important;
 }
 .nvabarra {

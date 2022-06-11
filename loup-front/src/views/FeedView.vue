@@ -1,7 +1,6 @@
 <template>
 <NavBar msg="Welcome to Your Vue.js App"/>
   <main>
-    
     <div class="topMenu">
         <button href="#" class="btn btn-light my-2">Todos</button>
         <button href="#" class="btn btn-light my-2">Tops semana</button>
@@ -10,16 +9,15 @@
         <div class="my-2">
           <input type="search"  placeholder="Search" aria-label="Search">
           <button class="btn btn-light" style="margin-left: 25px;" type="submit">Search</button>
-        </div>
-                
+        </div>                
     </div>
     
-    <div class="album py-5 bg-light">
+    <div id="telaPrincipal" class="album py-5 bg-success">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
           <!-- Começo do card -->
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow">
               <div width="100%" height="225">
                 <img src="../assets/img/Medicina.jpeg" class="card-img-top" alt="">
               </div>
@@ -45,26 +43,21 @@
             </div>
           </div>
           <!-- Fim do card -->
-
         </div>
       </div>
     </div>
     
   </main>
-  
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Back to top</a>
-      </p>
-      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
-    </div>
-  </footer>
 </template>
 <script>
 import NavBar from '@/components/NavBar.vue'
+
 export default {
+  data() {
+    return {
+      ativaModalMsg: false
+    }
+  },
   name: 'FeedView',
   components: {
     NavBar
@@ -75,25 +68,11 @@ export default {
 <style>
 :root{
     --roxo: #5E17EB;
-    --cinza: rgb(174, 172, 172);
-}
-.bg-light {
-    --bs-bg-opacity: 1;
-    background-color:var(--cinza);
+    --cinza: #aeacac;
 }
 .topMenu{
     background-color: var(--roxo);
     width: 100%!important;
-}
-.btn-light {
-    color: var(--roxo)!important;
-    border: 1px solid black!important;
-    margin: 5px;
-}
-.btn-light:hover {
-    color: white!important;
-    background-color: var(--roxo)!important;
-    border: 2px solid white!important;
 }
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -145,4 +124,24 @@ export default {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+  .btn-light {
+    --bs-bg-opacity: 1;
+    color: var(--roxo)!important;
+    border: 1px solid black!important;
+    margin: 5px;
+}
+.btn-light:hover {
+    color: white!important;
+    border: 2px solid white!important;
+    background-color: var(--roxo)!important;
+}
+#telaPrincipal{
+    background-color: white!important;
+}
+.shadow{
+  transition: 0.7s;
+}
+.shadow:hover{
+  transform: translateY(-13px);
+}
 </style>

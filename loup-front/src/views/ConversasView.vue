@@ -4,7 +4,7 @@
 
       <div class="row">
     
-       <div class="col-6 bg-primary p-5">
+       <div id="boxColor" class="col-6 bg-primary p-5">
 
         <div class="b-example-divider"><h2 class="fw-normal text-center ">Grupos</h2></div>
 
@@ -36,7 +36,7 @@
 
        </div>
     
-       <div class="col-6 bg-primary p-5">
+       <div id="boxColor" class="col-6 bg-primary p-5">
 
         <div class="b-example-divider"><h2 class="fw-normal text-center ">Chats privados</h2></div>
 
@@ -72,6 +72,8 @@
       </div>
     
      </div>
+
+
 </template>
 <script>
 import NavBar from '@/components/NavBar.vue'
@@ -212,11 +214,14 @@ body {
     box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
 }
 .bg-primary {
-  background-color: var(--roxo)!important;
   border: 5px solid white;
   border-radius: 5rem;
+  background-color: var(--roxo)!important;
 }
 .mb-1{
   text-align: left;
+}
+#boxColor{
+  background-color: var(--roxo)!important;
 }
 </style>
