@@ -26,7 +26,7 @@
             <div class="d-flex gap-2 w-100 justify-content-between">
               <div>
                 <h6 class="mb-1">Javeiros</h6>
-                <p class="mb-0 opacity-75">Convidou voce para a comunidade</p>
+                <p class="mb-0 opacity-75">Rogerio: Na versao que eu usei el...</p>
               </div>
               <small class="opacity-50 text-nowrap">5m atrás</small>
             </div>
@@ -38,7 +38,7 @@
     
        <div id="boxColor" class="col-6 bg-primary p-5">
 
-        <div class="b-example-divider"><h2 class="fw-normal text-center ">Chats privados</h2></div>
+        <div class="b-example-divider"><h2 class="fw-normal text-center">Chats privados</h2></div>
 
         <div class="list-group w-auto" >
           <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
@@ -59,7 +59,7 @@
             <div class="d-flex gap-2 w-100 justify-content-between">
               <div>
                 <h6 class="mb-1">Rogerio</h6>
-                <p class="mb-0 opacity-75">Pedido de amizade recebido</p>
+                <p class="mb-0 opacity-75">Mano bora fazer o tra...</p>
               </div>
               <small class="opacity-50 text-nowrap">5m atrás</small>
             </div>

@@ -43,6 +43,64 @@
             </div>
           </div>
           <!-- Fim do card -->
+
+          <!-- Começo do card -->
+          <div class="col">
+            <div class="card shadow">
+              <div width="100%" height="225">
+                <img src="../assets/img/EngSoftware.jpeg" class="card-img-top" alt="">
+              </div>
+              <img src="" alt="">
+              <div class="card-body">
+                <strong>Engenheiros de Software</strong>
+                <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text">Profissionais</p>
+
+                  <small class="text-muted"></small>
+                  <div class="btn-group">
+                    <small class="text-muted">22/40</small>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"></small>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-success"><img src="../assets/img/flecha.png"  width="70%"></button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim do card -->
+
+          <!-- Começo do card -->
+          <div class="col">
+            <div class="card shadow">
+              <div width="100%" height="225">
+                <img src="../assets/img/pessoas.jpg" class="card-img-top" alt="">
+              </div>
+              <img src="" alt="">
+              <div class="card-body">
+                <strong>Grupo da galera</strong>
+                <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text">Conhecendo novas pessoas</p>
+
+                  <small class="text-muted"></small>
+                  <div class="btn-group">
+                    <small class="text-muted">72/100</small>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted"></small>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-success"><img src="../assets/img/flecha.png"  width="70%"></button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim do card -->
         </div>
       </div>
     </div>
@@ -65,7 +123,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 :root{
     --roxo: #5E17EB;
     --cinza: #aeacac;
