@@ -196,6 +196,11 @@ export default {
 #telaPrincipal{
     background-color: white!important;
 }
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .shadow{
   transition: 0.7s;
 }

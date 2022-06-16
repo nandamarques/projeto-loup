@@ -3,7 +3,7 @@
 
   <router-view></router-view>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a @click="abrirModal" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#5E17EB;color:white;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+<a v-if="ativaIcone" @click="abrirModal" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#5E17EB;color:white;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
   z-index:1000;">
 <i style="margin-top:16px" :class="icone"></i>
 </a>
@@ -15,10 +15,12 @@ import ModalMsg from '@/components/ModalMsg.vue'
 export default {
   data() {
     return {
+      page: null,
       iconeSino: 'fa fa-bell',
       iconeClose: 'fa fa-close',
       icone: 'fa fa-bell',
-      ativaModalMsg: false
+      ativaModalMsg: false,
+      ativaIcone: true,
     }
   },
   components: {
@@ -26,15 +28,22 @@ export default {
   },
   methods: {
     abrirModal() {
+      if(this.$route.name === 'home'){
+        this.ativaIcone = false
+      }else{
+        this.ativaIcone = true
+      }
+
       if(this.ativaModalMsg == false) {
         this.icone = this.iconeClose
         this.ativaModalMsg = true
       } else {
         this.icone = this.iconeSino
         this.ativaModalMsg = false
-      }
+      }      
     }
 }
+
 }
 </script>
 <style>

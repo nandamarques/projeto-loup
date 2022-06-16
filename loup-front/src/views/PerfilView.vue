@@ -66,7 +66,10 @@
         </div>
       </div>
     </div>
-    <p class="shadow-lg p-3 mb-5 bg-white rounded">Desenvolvedor FullStack C# .Net | VueJs | Postgresql | </p>
+    <br>
+    <pre class="shadow-lg p-3 mb-5 bg-white rounded">Hello, I'm Davi SIlva From Brazil.
+Welcome to my profile!
+Send mesage to me Baby! </pre>
   </section>
 
    <div class="album py-5 bg-light">
