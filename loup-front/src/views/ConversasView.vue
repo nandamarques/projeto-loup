@@ -85,7 +85,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 :root{
   --roxo: #5E17EB;
   --cinza: rgb(174, 172, 172);

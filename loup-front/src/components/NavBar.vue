@@ -26,11 +26,11 @@
     }
 </script>
 
-<style>
+<style scoped>
 #navbar {
   margin-bottom: 0px!important;
 }
 .nvabarra {
-    background-color: white!important;
+    background-color: black!important;
 }
 </style>
