@@ -28,12 +28,6 @@ export default {
   },
   methods: {
     abrirModal() {
-      if(this.$route.name === 'home'){
-        this.ativaIcone = false
-      }else{
-        this.ativaIcone = true
-      }
-
       if(this.ativaModalMsg == false) {
         this.icone = this.iconeClose
         this.ativaModalMsg = true
@@ -42,7 +36,16 @@ export default {
         this.ativaModalMsg = false
       }      
     }
-}
+},
+  watch: {
+    '$route.name' (value) {
+      if(value === 'home' || value === 'perfil') {
+        this.ativaIcone = false
+      }else{
+        this.ativaIcone = true
+      }
+    }
+  }
 
 }
 </script>
